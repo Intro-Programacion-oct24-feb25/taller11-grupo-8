@@ -6,18 +6,10 @@
 package problemas;
 import java.util.Scanner;
 
-/**
- *
- * @author reroes
- */
 public class Problema3 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
-        // TODO code application logic here
         double[] notas = new double[4];
         String cualitativo;
         for (int i = 0; i <= 3; i++){
@@ -26,7 +18,6 @@ public class Problema3 {
         }
         
         cualitativo = funcion1(notas[0], notas[1], notas[2], notas[3]);
-        double promedio = (notas[0] + notas[1] + notas[2] + notas[3]) / 4;
         System.out.println("El promedio de las notas: " + notas[0] + ", " + notas[1] + ", " + notas[2] +
                 "; " + notas[3] + " es: " + cualitativo) ;
     }
@@ -35,7 +26,7 @@ public class Problema3 {
         // 
         int promedio = 0;
         String mensaje = "";
-        promedio = (int) ((a + b +c + d )/4);
+        promedio = (int) ((a + b + c + d )/4);
         if (promedio <= 5) {
             mensaje = "Regular";
         } else {
@@ -46,9 +37,14 @@ public class Problema3 {
                     mensaje = "Sobre Saliente";
                 }
             }
-        }
+        }       
+        return null;
+    }
+    
+    public static String convertirMayusculas(String mensaje){
+        
         return mensaje;
         
     }
-    
+
 }
