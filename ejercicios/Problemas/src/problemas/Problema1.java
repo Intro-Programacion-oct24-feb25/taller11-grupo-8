@@ -22,7 +22,7 @@ public class Problema1 {
     public static void imprimirDatos(int[][] arreglo) {
         String cadena = "";
         for (int i = 0; i < arreglo.length; i++) {
-            for (int j = 0; j < arreglo.length; j++) {
+            for (int j = 0; j < arreglo[i].length; j++) {
                 if (arreglo[i][j] % 2 == 0) {
                     cadena = String.format("%s%s\t", cadena, arreglo[i][j]);
                 }
