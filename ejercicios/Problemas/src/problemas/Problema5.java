@@ -12,23 +12,10 @@ package problemas;
 public class Problema5 {
 
     public static void main(String[] args) {
-        // Definir las matrices de prueba
-        int[][] informacion = {
-            {1, 2, 3},
-            {10, 20, 30},
-            {100, 200, 300}
-        };
-
-        int[][] informacion2 = {
-            {1, 2, 3},
-            {10, 20, 30},
-            {100, 200, 300}
-        };
-
-        
+        int[][] informacion = {{1,2,3}, {10, 20, 30}, {100, 200, 300}};
+        int[][] informacion2 = {{1, 2, 3}, {10, 20, 30}, {100, 200, 300}};        
         int[][] resultado = sumaMatrices(informacion, informacion2);
-
-        
+       
         System.out.println("Resultado de la suma de las matrices:");
         for (int i = 0; i < resultado.length; i++) {
             for (int j = 0; j < resultado[i].length; j++) {
@@ -40,7 +27,6 @@ public class Problema5 {
 
     public static int[][] sumaMatrices(int[][] matriz1, int[][] matriz2) {
         if (matriz1.length != matriz2.length || matriz1[0].length != matriz2[0].length) {
-            throw new IllegalArgumentException("Las matrices deben tener las mismas dimensiones.");
         }
 
         int filas = matriz1.length;
